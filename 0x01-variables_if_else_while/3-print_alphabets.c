@@ -1,10 +1,9 @@
 #include <stdio.h>
 #include <stdlib.h>
 /**
- * Main it the entry point
+ * main - it the entry point
  *
- * Return value is 0 meaning success
- *
+ * return: value is 0 meaning success
  */
 
 int main(void)
@@ -12,14 +11,17 @@ int main(void)
 char small = 'a';
 char big = 'A';
 
-while(small <= 'z' && big <= 'Z')
+while (small <= 'z')
 {
 putchar (small);
-putchar (big);
-
 small++;
+}
+while (big <= 'Z')
+{
+putchar (big);
 big++;
 }
+
 putchar ('\n');
 
 return (0);

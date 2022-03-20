@@ -11,11 +11,11 @@ int number, number0;
 
 for (number = 0; number < 10; number++)
 {
-for (number0 = 0; number0 < 10; number0++)
+for (number0 = 1; number0 < 10; number0++)
 {
 putchar (number + '0');
 putchar (number + '0');
-if (number <= 8)
+if (number <= 10)
 putchar (',');
 putchar (' ');
 }

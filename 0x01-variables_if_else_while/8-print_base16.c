@@ -13,6 +13,7 @@ char a;
 while (number < 10)
 {
 putchar (number + '0');
+number++;
 }
 for (a = 'a'; a < 'f'; a++)
 {

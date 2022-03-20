@@ -12,8 +12,6 @@
 int main(void)
 {
 int n,number;
-int counter = 0;
-
 
 
 srand(time(0));

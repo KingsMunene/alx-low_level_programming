@@ -14,6 +14,7 @@ for (start = 'a'; start <= 'z'; start++)
 if (start != 'e' && start != 'q')
 putchar (start);
 
+putchar('\n');
 return(0);
 
 }

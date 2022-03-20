@@ -16,6 +16,6 @@ while (genesis <= 'z')
 putchar (genesis);
 genesis++;
 }
-putchar ("\n");
+putchar (\n);
 return (0);
 }

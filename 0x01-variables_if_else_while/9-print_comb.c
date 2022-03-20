@@ -17,7 +17,6 @@ if (number <= 8)
 putchar (',');
 putchar (' ');
 }
-putchar ('\n');
 return (0);
 
 }

@@ -8,11 +8,11 @@
 
 int main(void)
 {
-char start = 'a';
+char start;
 
-for (a = start; a <= 'z'; a++)
-if (a != e || a != q)
-putchar (a);
+for (start = 'a'; a <= 'z'; a++)
+if (start != 'e' || start != 'q')
+putchar (start);
 
 return (0);
 

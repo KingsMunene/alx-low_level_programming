@@ -1,7 +1,7 @@
 #include "main.h"
 
 /**
- * main - Entry point of the program
+ * main - Entry 
  *
  * Return: is 0 to indicate success
  */
@@ -17,10 +17,6 @@ _putchar('h');
 _putchar('a');
 _putchar('r');
 _putchar('\n');
-
-
-
-
 
 return (0);
 }

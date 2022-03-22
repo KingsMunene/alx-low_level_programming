@@ -11,13 +11,15 @@ int last;
 
 if (a < 0)
 {
-return ((a % 10) * -1);
-_putchar(return + '0');
+last = ((a % 10) * -1);
+_putchar(last + '0');
+return (last);
 
 }
 else 
 {
-return ((a % 10);
-_putchar (return);
+last = ((a % 10);
+_putchar (last);
+return (last);
 }
 }

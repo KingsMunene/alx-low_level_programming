@@ -6,7 +6,7 @@
  * @b: second integer
  * @c: third integer
  * @largest: Captures the largest of the three
- *Return: returns the largest number
+ * Return: returns the largest numbe
  */
 
 int largest_number(int a, int b, int c)
@@ -25,5 +25,5 @@ else
 {
 largest = c;
 }
-return (largest);
+return(largest);
 }

@@ -29,6 +29,7 @@ _putchar ((ans / 10) + '0');
 _putchar ((ans % 10) + '0');
 if (main != 0)
 {
+_putchar (',');
 _putchar (' ');
 }
 else 

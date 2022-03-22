@@ -27,7 +27,7 @@ else
 {
 _putchar ((ans / 10) + '0');
 _putchar ((ans % 10) + '0');
-if (main != 0)
+if (main != 0 && mult < 9)
 {
 _putchar (',');
 _putchar (' ');

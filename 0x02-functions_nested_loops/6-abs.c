@@ -1,7 +1,7 @@
 #include "main.h"
 /**
- * main -
- * @n: 
+ * _abs
+ * @a: 
  * Return: returns the absolute form of a number
  */
 

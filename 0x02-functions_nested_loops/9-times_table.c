@@ -24,8 +24,8 @@ _putchar (' ');
 }
 else
 {
-_putchar ((ans / 10));
-_putchar ((ans % 10));
+_putchar ((ans / 10) + '0');
+_putchar ((ans % 10) + '0');
 if (mult < 9)
 {
 _putchar (',');

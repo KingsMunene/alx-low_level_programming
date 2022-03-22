@@ -20,7 +20,7 @@ if (mult < 9 )
 {
 _putchar (',');
 _putchar (' ');
-_putchar (' ');
+
 }
 }
 else
@@ -30,7 +30,6 @@ _putchar ((ans % 10) + '0');
 if (mult < 9)
 {
 _putchar (',');
-_putchar (' ');
 _putchar (' ');
 }
 }

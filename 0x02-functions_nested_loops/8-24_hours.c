@@ -37,4 +37,5 @@ _putchar (minutes + '0');
 
 }
 }
+_putchar ('\n');
 }

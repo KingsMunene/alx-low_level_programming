@@ -1,6 +1,6 @@
 #include "main.h"
 /**
- * _abs
+ * _abs - absolute form
  * @a: integer used
  * Return: returns the absolute form of a number
  */

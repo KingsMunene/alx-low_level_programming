@@ -20,7 +20,7 @@ _putchar ((ans % 10) + '0');
 }
 else if (mult != 0)
 {
-_putchar (' '); 
+_putchar (' ');
 _putchar (ans + '0');
 }
 else

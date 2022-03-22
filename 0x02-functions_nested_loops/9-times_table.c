@@ -13,12 +13,12 @@ for (mult = 0; mult < 10; mult++)
 {
 ans = main * mult;
 
-if (mult > 9)
+if (ans > 9)
 {
 _putchar ((ans / 10) + '0');
 _putchar ((ans % 10) + '0');
 }
-else if (main != 0)
+else if (mult != 0)
 {
 _putchar (' '); 
 _putchar (ans + '0');

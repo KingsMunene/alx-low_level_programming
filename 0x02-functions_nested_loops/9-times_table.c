@@ -12,11 +12,16 @@ for (main = 0; main < 10; main++)
 for (mult = 0; mult < 10; mult++)
 {
 ans = main * mult;
-if (mult < 10)
+if (ans > 9)
 {
-_putchar (ans + '0');
+_putchar ((ans / 10) + '0');
+_putchar ((ans % 10) + '0');
+
+if (mult < 9)
+{
 _putchar (',');
 _putchar (' ');
+}
 }
 else
 {

@@ -12,27 +12,28 @@ for (main = 0; main < 10; main++)
 for (mult = 0; mult < 10; mult++)
 {
 ans = main * mult;
-if (ans < 10)
-{
-_putchar (ans + '0');
 
-if (mult < 9 )
-{
-_putchar (',');
-_putchar (' ');
-}
-}
-else
+if (mult > 9)
 {
 _putchar ((ans / 10) + '0');
 _putchar ((ans % 10) + '0');
-if (main != 0 && mult < 9)
+}
+else if (main != 0)
+{
+_putchar (' '); 
+_putchar (ans + '0');
+}
+else
+{
+_putchar (ans + '0');
+}
+if (mult != 9)
 {
 _putchar (',');
 _putchar (' ');
 }
 }
-}
 _putchar ('\n');
+
 }
 }

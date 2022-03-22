@@ -14,7 +14,7 @@ for (minutes = 0; minutes < 60; minutes++)
 {
 if (hour < 10)
 {
-_putchar ('0');
+_putchar (0 + '0');
 _putchar (hour + '0');
 
 }

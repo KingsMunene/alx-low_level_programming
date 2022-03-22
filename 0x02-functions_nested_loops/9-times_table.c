@@ -24,8 +24,8 @@ _putchar (' ');
 else
 {
 _putchar (' ');
-
 }
+
 else
 {
 _putchar ((ans / 10) + '0');
@@ -40,9 +40,8 @@ else
 {_putchar (' ');
 }
 }
-_putchar ('\n');
 }
-
+_putcahr ('\n');
 }
 }
 }

@@ -12,7 +12,7 @@ for (main = 0; main <= 9; main++)
 for (mult = 0; mult <= 9; mult++)
 {
 ans = main * mult;
-if (mult != 9)
+if (mult < 10)
 {
 _putchar (ans + '0');
 _putchar (',');

@@ -18,7 +18,7 @@ return (last);
 }
 else 
 {
-last = ((a % 10);
+last = (a % 10);
 _putchar (last);
 return (last);
 }

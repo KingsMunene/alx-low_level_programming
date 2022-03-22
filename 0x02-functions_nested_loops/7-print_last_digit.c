@@ -11,7 +11,7 @@ int last;
 
 if (a < 0)
 {
-last = ((a % 10) * -1);
+last = 1 * (a % 10);
 _putchar(last + '0');
 return (last);
 
@@ -19,7 +19,7 @@ return (last);
 else 
 {
 last = (a % 10);
-_putchar (last);
+_putchar (last + '0');
 return (last);
 }
 }

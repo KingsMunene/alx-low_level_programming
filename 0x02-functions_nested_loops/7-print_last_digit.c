@@ -11,12 +11,12 @@ int last;
 
 if (a < 0)
 {
-last = 1 * (a % 10);
+last = -1 * (a % 10);
 _putchar(last + '0');
 return (last);
 
 }
-else 
+else
 {
 last = (a % 10);
 _putchar (last + '0');

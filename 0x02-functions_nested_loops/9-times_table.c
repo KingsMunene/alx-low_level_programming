@@ -14,10 +14,7 @@ for (mult = 0; mult < 10; mult++)
 ans = main * mult;
 if (ans < 10)
 {
-if (b != 0)
-{
 _putchar (ans + '0');
-}
 
 if (mult < 9 )
 {

@@ -16,10 +16,11 @@ if (mult != 9)
 {
 _putchar (ans + '0');
 _putchar (',');
+_putchar (' ');
 }
 else
 {
-_putchar (ans);
+_putchar (ans + '0');
 }
 }
 _putchar ('\n');

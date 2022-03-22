@@ -22,7 +22,9 @@ _putchar (',');
 _putchar (' ');
 }
 else
-{_putchar (' ');
+{
+_putchar (' ');
+
 }
 else
 {
@@ -41,4 +43,6 @@ else
 _putchar ('\n');
 }
 
+}
+}
 }

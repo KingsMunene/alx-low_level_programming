@@ -14,7 +14,13 @@ while (c <= 10)
 {
 while (d <= 14)
 {
-_putchar(d + '0');
+if (d >= 10)
+{
+_putchar(d / 10 + '0');
+_putchar(d % 10 + '0');
+
+}
+
 d++;
 }
 c++;

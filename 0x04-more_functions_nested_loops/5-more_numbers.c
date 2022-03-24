@@ -2,7 +2,7 @@
 
 /**
  * more_numbers - print 0 to 14 ten times
- * newline 
+ * followed by a newline 
  */
 
 void more_numbers(void)

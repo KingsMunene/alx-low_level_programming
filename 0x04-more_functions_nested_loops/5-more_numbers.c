@@ -20,10 +20,9 @@ _putchar(d / 10 + '0');
 _putchar(d % 10 + '0');
 
 }
-else
-_putchar(d + '0');
 d++;
 }
+_putchar('\n');
 c++;
 }
 }

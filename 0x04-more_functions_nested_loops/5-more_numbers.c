@@ -17,6 +17,6 @@ if (d >= 10)
 _putchar(d / 10 + '0');
 _putchar(d % 10 + '0');
 }
-}
 _putchar('\n');
+}
 }

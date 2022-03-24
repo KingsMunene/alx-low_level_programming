@@ -4,7 +4,7 @@
  * new line after printing
  */
 
-void print_numbers(void)
+void print_most_numbers(void)
 {
 int c = 0;
 

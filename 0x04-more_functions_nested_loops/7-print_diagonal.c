@@ -19,7 +19,7 @@ else
 	{
 	_putchar(''\'');
 	_putchar('\n');
-
+	i++;
 	}
 }
 }

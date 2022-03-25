@@ -11,7 +11,7 @@ int count = 0;
 
 if (n != 0 || n < 0)
 {
-while (count <= n)
+while (count < n)
 {
 _putchar('_');
 count++;

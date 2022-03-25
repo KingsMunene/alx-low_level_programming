@@ -15,10 +15,11 @@ while (c <= 10)
 for (d = 0; d < 15; d++)
 {
 if (d >= 10)
-_putchar (d / 10 + '0');
-_putchar (d % 10 + '0');
+_putchar(d / 10 + '0');
+_putchar(d % 10 + '0');
 }
 c++;
-_putchar ('\n');
+_putchar('\n');
 
-}}
+}
+}

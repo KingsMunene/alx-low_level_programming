@@ -16,7 +16,7 @@ else
 int i = 0;
 while(i < n)
 {
-_putchar('\'');
+_putchar('\\');
 _putchar('\n');
 i++;
 }

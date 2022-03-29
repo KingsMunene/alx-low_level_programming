@@ -1,4 +1,5 @@
 #include "main.h"
+
 /**
  * _strspn - gets the length of a prefix substing
  * @s: string to evaluate
@@ -6,10 +7,9 @@
  * 
  * Return: the numbers of bytes in the initial segment of s which consist only of byte from accepts
  */
-
 unsigned int  _strspn(char *s, char *accept)
 {
-	unsigned int i, j, k, check;
+	int i, j, k, check;
 
 	k = 0;
 
@@ -31,6 +31,6 @@ unsigned int  _strspn(char *s, char *accept)
 			return (k);
 		}
 	}
-	return  (0);
+	return (0);
 }
 

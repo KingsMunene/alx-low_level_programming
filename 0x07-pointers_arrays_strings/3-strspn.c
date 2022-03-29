@@ -3,7 +3,7 @@
  * * _strspn - gets the length of a prefix substing
  * @s: string to evaluate
  * @accept: string containing the list of characters to match in s
- * @k: return the number
+ * 
  * Return: the numbers of bytes in the initial segment of s which consist only of byte from accepts
  */
 

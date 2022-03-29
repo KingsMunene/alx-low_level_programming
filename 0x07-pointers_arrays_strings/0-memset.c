@@ -6,7 +6,6 @@
  * @s: Area pointed by s
  * Return: pointer of s
  */
-
 char *_memset(char *s, char b, unsigned int n)
 {
 	unsigned int i;

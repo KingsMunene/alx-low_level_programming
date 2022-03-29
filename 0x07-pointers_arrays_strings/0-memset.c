@@ -1,6 +1,6 @@
 #include "main.h"
 /**
- * *_memset - function fills the first n bytes of the memory area pointed to by s
+ * _memset - function fills the first n bytes of the memory area pointed to by s
  * @s: pointed by s
  * @b: Constant byte b
  * @n: The number of times to fill the pointer
@@ -15,4 +15,3 @@ char *_memset(char *s, char b, unsigned int n)
 
 	return (s);
 }
-

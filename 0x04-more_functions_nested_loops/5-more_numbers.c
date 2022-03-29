@@ -1,22 +1,29 @@
 #include "main.h"
 
 /**
- * more_numbers - prints 10 times the numbers, from 0 to 14
- * followed by a new line
- *@i: columns
- *@j: Rows
+ * print_triangle - prints a triangle, followed by a new line
+ * @size: size of the triangle
  */
-void more_numbers(void)
+void print_triangle(int size)
+{
+if (size <= 0)
+{
+_putchar('\n');
+}
+else
 {
 int i, j;
-for (i = 0; i < 10; i++)
+for (i = 1; i <= size; i++)
 {
-for (j = 0; j < 15; j++)
+for (j = i; j < size; j++)
 {
-if (j >= 10)
-_putchar(j / 10 + '0');
-_putchar(j % 10 + '0');
+_putchar(' ');
+}
+for (j = 1; j <= i; j++)
+{
+_putchar('#');
 }
 _putchar('\n');
+}
 }
 }

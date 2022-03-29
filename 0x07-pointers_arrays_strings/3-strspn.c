@@ -1,5 +1,4 @@
 #include "main.h"
-
 /**
  * * _strspn - gets the length of a prefix substing
  * @s: string to evaluate
@@ -9,7 +8,6 @@
 
 unsigned int  _strspn(char *s, char *accept)
 {
-
 	int i, j, k, check;
 
 	k = 0;

@@ -1,15 +1,14 @@
 #include "main.h"
 /**
- * * _strspn - gets the length of a prefix substing
+ * *_strspn - gets the length of a prefix substing
  * @s: string to evaluate
  * @accept: string containing the list of characters to match in s
- * 
  * Return: the numbers of bytes in the initial segment of s which consist only of byte from accepts
  */
 
 unsigned int  _strspn(char *s, char *accept)
 {
-	int i, j, k, check;
+	unsigned int i, j, k, check;
 
 	k = 0;
 
@@ -30,7 +29,7 @@ unsigned int  _strspn(char *s, char *accept)
 		{
 			return (k);
 		}
-	}	
+	}
 	return  (0);
 }	
 

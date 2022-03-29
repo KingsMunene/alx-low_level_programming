@@ -1,9 +1,10 @@
 #include "main.h"
 
- /**
-  * puts_half - print second half of a string
-  * @str: char array string type
-  */
+/**
+ * puts_half - prints half of a string
+ * followed by a new line
+ * @str: string to be printed
+ */
 void puts_half(char *str)
 {
 int a;

@@ -10,22 +10,33 @@
 
 int main(int argc, char *argv[])
 {
-if (argc != 3)
+int i, j, k;
+
+int sum = 0;
+
+if (argc < 0)
 {
 printf("%d\n", 0);
 }
 
-if (*argv[1] > '9' || *argv[2] > '9')
+for (i = 1; i < argc; i++)
+{
+for (j = 0; argv[i][j] != '\0'; j++)
+{
+if (argv[i][j] > '9' || argv[i][j] < '0')
 {
 printf("Error\n");
-
 return (1);
 }
-
-if (atoi(argv[1]) >= 0 && atoi(argv[2]) >= 0)
-{
-printf("%d\n", atoi(argv[1]) + atoi(argv[2]));
-return (0);
 }
+}
+
+for (k = 1; k < argc; k++)
+{
+if (k != '\0')
+sum+=atoi(argv[k]);
+}
+printf("%i\n", sum);
+return (0);
 }
 

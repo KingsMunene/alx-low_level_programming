@@ -3,6 +3,7 @@
 
 /**
  * main - adds two positive number
+ * atoi - converts string into int
  * @argc: number of arguments
  * @argv: array of arguents
  *
@@ -20,7 +21,7 @@ int main(int argc, char *argv[])
 	{
 	  if (argv[i][j] > '9' || argv[i][j] < '0')
 	    {
-	      puts("Error");
+	      printf("Error");
 	      return (1);
 	    }
 	}

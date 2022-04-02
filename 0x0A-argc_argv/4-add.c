@@ -6,9 +6,7 @@
  * @argc: argument count
  * @argv: argument array
  * Return: 1 (fail) 0 (success)
- * 
  */
-
 int main(int argc, char *argv[])
 {
 int i, j, k;

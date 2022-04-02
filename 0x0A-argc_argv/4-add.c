@@ -3,8 +3,6 @@
 
 /**
  * main - adds two positive number
- * @sum: the answer
- * @num: number
  * @argc: number of arguments
  * @argv: array of arguents
  *

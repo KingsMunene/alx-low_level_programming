@@ -12,5 +12,6 @@
 int main(int agrc, char *argv[])
 {
 printf("%s\n", *argv);
+return(0);
 }
 

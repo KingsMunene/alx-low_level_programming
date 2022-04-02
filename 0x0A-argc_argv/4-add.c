@@ -2,41 +2,40 @@
 #include <stdlib.h>
 
 /**
- * main - adds two numbers
- * @argc: argument count
- * @argv: argument array
- * 
- * Return: 1 (fail)
+ * isInt - Checks if s is an interger
+ * main - adds the positive numbers
+ * @s: string to check.
+ * @argc: arguement count
+ * @argv: arguement vector
+ * Return: Always 0.(success)
+ * Return: Always 1.(Error)
  */
+int isInt(char *s)
+{
+  int i = 0;
+
+  while(s[i] != '\0')
+    {
+      if(s[i] < '0' || s[i] > '9')
+	return (1);
+      i++;
+    }
+  return (0);
+}
 
 int main(int argc, char *argv[])
 {
-int i, j, k;
+  int sum = 0;
 
-int sum = 0;
-if (argc <= 0)
-{
-printf("%d\n", 0);
+  while(--argc)
+    {
+      if(isInt(argv[argc]))
+	{
+	  printf("Error\n");
+	  return (1);
+	}
+      sum += atoi(argv[argc]);
+    }
+  printf("%i\n", sum);
+  return (0);
 }
-for (i = 1; i < argc; i++)
-{
-for (j = 0; argv[i][j] != '\0'; j++)
-{
-if (argv[i][j] > '9' || argv[i][j] < '0')
-{
-printf("Error\n");
-return (1);
-}
-}
-}
-for (k = 1; k < argc; k++)
-{
-if (k != '\0')
-{	
-sum = sum + atoi(argv[k]);
-printf("%d\n", sum);
-return (0);
-}
-}
-}
-

@@ -5,7 +5,7 @@
 * main - prints the minimum number of coins given change.
 * @argc: argument count
 * @argv: argument arrayi
-*
+* @count:
 * Return: 1 or 0
 */
 int main(int argc, char *argv[])

@@ -10,14 +10,12 @@
 
 int main(int argc, char *argv[])
 {
-int i = 0;
-while (argc >= i)
+int i;
+
+for (i = 0; i <= arg; i++)
 {
-printf("%s\n", *argv[i])
-i++;
-argc--;
+printf("%s\n",argv[i]);
 }
+
 return (0);
-
 }
-

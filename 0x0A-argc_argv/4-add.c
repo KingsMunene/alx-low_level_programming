@@ -18,7 +18,6 @@ if (argc <= 0)
 {
 printf("%d\n", 0);
 }
-
 for (i = 1; i < argc; i++)
 {
 for (j = 0; argv[i][j] != '\0'; j++)
@@ -27,19 +26,13 @@ if (argv[i][j] < '0' || argv[i][j] > '9')
 {
 printf("Error\n");
 return (1);
-}
-}
-}
-
+}}}
 for (k = 0; k < argc; k++)
 {
 if (*argv[k] != '\0')
 {
 sum+=atoi(argv[k]);
-
-}
-}
-
+}}
 printf("%d\n", sum);
 return (0);
 }

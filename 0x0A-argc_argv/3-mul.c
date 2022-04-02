@@ -5,7 +5,8 @@
  * main - multiplies two numbers and prints results
  * @argc: Argument count
  * @argv: Argument array
- * Return: 0 if success
+ * atoi - converts string to int
+ * Return: 0 (Success), 1 (Error)
  */
 
 int main(int argc, char *argv[])

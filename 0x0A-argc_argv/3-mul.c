@@ -5,8 +5,7 @@
  * main - Multiplies two numbers
  * @argc: Argument count
  * @argv: Argument array
- * Return: 1 (fail)
- * Return: 0 (success)
+ * Return: 1 (fail) or  0 (success)
  */
 
 int main(int argc, char *argv[])

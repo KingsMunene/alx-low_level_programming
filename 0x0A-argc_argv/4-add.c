@@ -8,17 +8,15 @@
  * 
  * Return: 1 (fail)
  */
+
 int main(int argc, char *argv[])
 {
 int i, j, k;
-
 int sum = 0;
-
 if (argc <= 0)
 {
 printf("%d\n", 0);
 }
-
 for (i = 1; i < argc; i++)
 {
 for (j = 0; argv[i][j] != '\0'; j++)
@@ -30,15 +28,12 @@ return (1);
 }
 }
 }
-
 for (k = 1; k < argc; k++)
 {
 if (k != '\0')
 sum = sum + atoi(argv[k]);
 }
-
 printf("%i\n", sum);
-
 return (0);
 }
 

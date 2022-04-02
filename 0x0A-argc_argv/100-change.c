@@ -24,7 +24,6 @@ if (argv[1] < 0)
 printf("%i\n", 0);
 }
 
-
 while (change >= 25)
 {
 change = change  - 25;

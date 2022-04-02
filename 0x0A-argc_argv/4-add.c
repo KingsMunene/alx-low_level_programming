@@ -6,7 +6,7 @@
  * @argc: argument count
  * @argv: argument array
  * Return: 1 (fail) 0 (success)
- * @sum: answer after adding
+ * 
  */
 
 int main(int argc, char *argv[])

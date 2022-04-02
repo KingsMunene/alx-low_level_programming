@@ -5,8 +5,8 @@
  * main - adds two numbers
  * @argc: argument count
  * @argv: argument array
+ * 
  * Return: 1 (fail)
- * Return: Return 0
  */
 int main(int argc, char *argv[])
 {

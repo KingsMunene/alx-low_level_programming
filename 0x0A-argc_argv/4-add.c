@@ -33,7 +33,7 @@ return (1);
 
 for (k = 0; k < argc; k++)
 {
-if (argv[k] != '\0')
+if (*argv[k] != '\0')
 {
 sum+=atoi(argv[k]);
 return (0);

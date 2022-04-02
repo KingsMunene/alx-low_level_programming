@@ -7,9 +7,9 @@
  * @s: string to check.
  * @argc: arguement count
  * @argv: arguement vector
- * Return: Always 0.(success)
- * Return: Always 1.(Error)
+ * Return: Always 0.(success), 1.(Error)
  */
+
 int isInt(char *s)
 {
 int i = 0;

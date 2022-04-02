@@ -2,39 +2,42 @@
 #include <stdlib.h>
 
 /**
- * main - adds the positive numbers
- * @argc: arguement count
- * @argv: arguement vector
+ * main - adds positive numbers
+ * @argc: argument count
+ * @argv: arguments array
  *
- * Return: Always 0.(success), 1.(Error)
+ * Return: 0 (success), 1 (fail)
  */
-
-int isInt(char *s)
-{
-int i = 0;
-
-while(s[i] != '\0')
-{
-if(s[i] < '0' || s[i] > '9')
-return (1);
-i++;
-}
-return (0);
-}
 
 int main(int argc, char *argv[])
 {
+int i,j,k;
 int sum = 0;
 
-while(--argc)
+if (argc <= 0)
 {
-if(isInt(argv[argc]))
+printf("%d\n", 0);
+}
+
+for (i = 1; i < argc; i++)
+{
+for (j = 0; j != '\0'; j++)
+{
+if (argv[i][j] < '0' || argv[i][j] > '9')
 {
 printf("Error\n");
 return (1);
 }
-sum += atoi(argv[argc]);
 }
-printf("%i\n", sum);
+}
+
+for (k = 0; k < argc; k++)
+{
+if (argv[k] != '\0')
+{
+sum+=atoi(argv[k]);
 return (0);
+
+}
+}
 }

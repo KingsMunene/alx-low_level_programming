@@ -2,11 +2,10 @@
 #include <stdlib.h>
 
 /**
- * isInt - Checks if s is an interger
  * main - adds the positive numbers
- * @s: string to check.
  * @argc: arguement count
  * @argv: arguement vector
+ *
  * Return: Always 0.(success), 1.(Error)
  */
 

@@ -12,7 +12,8 @@ int main(int argc, char *argv[])
 {
 int sum, num, i, j, k;
 sum = 0;
-if (argc < 0)
+ 
+if (argc <= 0)
 {
 printf("%d\n", 0);
 }
@@ -28,6 +29,7 @@ return (1);
 }
 }
 }
+
 for (k = 1; k < argc; k++)
 {
 num = atoi(argv[k]);

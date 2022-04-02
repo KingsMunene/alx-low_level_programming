@@ -13,7 +13,7 @@ int main(int argc, char *argv[])
 int coins = 0;
 int change = atoi(argv[1]);
 
-if (argc != 2)
+if (argc > 2)
 {
 printf("Error\n");
 return (1);
@@ -53,8 +53,8 @@ while (change >= 1)
 change = change - 1;
 coins++;
 }
-
 printf("%d\n", coins);
+
 return (0);
 }
 

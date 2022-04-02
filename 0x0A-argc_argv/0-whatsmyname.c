@@ -7,10 +7,10 @@
  *
  * Return: 0 for success
  */
-int main(int agrc __attribute__((unused)), char *argv[])
+int main(int agrc, char **argv[])
 {
 printf("%s\n", *argv);
 
-return(0);
+return (0);
 }
 

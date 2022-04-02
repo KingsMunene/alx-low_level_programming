@@ -6,14 +6,13 @@
  * @argc: argument count
  * @argv: argument array
  * Return: 1 (fail) 0 (success)
+ * @sum: answer after adding
  */
 
 int main(int argc, char *argv[])
 {
 int i, j, k;
-
 int sum = 0;
-
 if (argc < 0)
 {
 printf("%d\n", 0);
@@ -31,7 +30,7 @@ return (1);
 }
 for (k = 1; k < argc; k++)
 {
-if (k != '\0')
+if (k != '\0')i
 sum+=atoi(argv[k]);
 }
 printf("%i\n", sum);

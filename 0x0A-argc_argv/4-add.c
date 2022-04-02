@@ -15,7 +15,7 @@ int i, j, k;
 
 int sum = 0;
 
-if (argc < 0)
+if (argc <= 0)
 {
 printf("%d\n", 0);
 }

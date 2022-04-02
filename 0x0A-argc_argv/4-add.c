@@ -5,7 +5,6 @@
  * main - adds positive numbers
  * @argc: argument count
  * @argv: arguments array
- *
  * Return: 0 (success), 1 (fail)
  */
 

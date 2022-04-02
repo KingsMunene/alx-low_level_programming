@@ -3,7 +3,8 @@
 
 /**
  * main - adds two positive number
- * atoi - converts string into int
+ * @sum: the answer
+ * @num: number
  * @argc: number of arguments
  * @argv: array of arguents
  *
@@ -11,31 +12,28 @@
  */
 int main(int argc, char *argv[])
 {
-  int sum, num, i, j, k;
+int sum, num, i, j, k;
+sum = 0;
 
-  sum = 0;
-
-  for (i = 1; i < argc; i++)
-    {
-      for (j = 0; argv[i][j] != '\0'; j++)
-	{
-	  if (argv[i][j] > '9' || argv[i][j] < '0')
-	    {
-	      printf("Error");
-	      return (1);
-	    }
-	}
-    }
-
-  for (k = 1; k < argc; k++)
-    {
-      num = atoi(argv[k]);
-      if (num >= 0)
-	{
-	  sum += num;
-	}
-    }
-
-  printf("%d\n", sum);
-  return (0);
+for (i = 1; i < argc; i++)
+{
+for (j = 0; argv[i][j] != '\0'; j++)
+{
+if (argv[i][j] > '9' || argv[i][j] < '0')
+{
+printf("Error");
+return (1);
+}
+}
+}
+for (k = 1; k < argc; k++)
+{
+num = atoi(argv[k]);
+if (num >= 0)
+{
+sum += num;
+}
+}
+printf("%d\n", sum);
+return (0);
 }

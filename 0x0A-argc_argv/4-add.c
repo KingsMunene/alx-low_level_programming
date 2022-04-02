@@ -34,9 +34,9 @@ for (k = 1; k < argc; k++)
 if (k != '\0')
 {	
 sum = sum + atoi(argv[k]);
-}
 printf("%d\n", sum);
 return (0);
+}
 }
 }
 

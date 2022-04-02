@@ -1,5 +1,7 @@
 #include <stdio.h>
 
+#inlcude "main.h"
+
 /**
 * main - gets the name of the program
 * @agrc: number of arguments
@@ -13,3 +15,4 @@ printf("%i\n", argc - 1);
 
 return (0);
 }
+

@@ -1,7 +1,5 @@
 #include <stdio.h>
 
-#inlcude "main.h"
-
 /**
 * main - gets the name of the program
 * @agrc: number of arguments
@@ -9,6 +7,7 @@
 *
 * Return: 0 for success
 */
+
 int main(int argc, char *argv[] __attribute__((unused)))
 {
 printf("%i\n", argc - 1);

@@ -11,50 +11,52 @@
 
 int main(int argc, char *argv[])
 {
+int count = 0;
+int change;
+
 if (argc != 2)
 {
 printf("Error\n");
 return (1);
 }
-int coins = 0;
-int change = atoi(argv[1]);
 
-
-if (argv[1] < 0)
+if (*argv[1] < 0)
 {
 printf("%i\n", 0);
 }
 
+change = atoi(argv[1]);
+
 while (change >= 25)
 {
 change = change  - 25;
-coins++;
+count++;
 }
 
 while (change >= 10)
 {
 change = change - 10;
-coins++;
+count++;
 }
 
 while (change >= 5)
 {
 change = change - 5;
-coins++;
+count++;
 }
 
 while (change >= 2)
 {
 change = change - 2;
-coins++;
+count++;
 }
 
 while (change >= 1)
 {
 change = change - 1;
-coins++;
+count++;
 }
-printf("%d\n", coins);
+printf("%d\n", count);
 
 return (0);
 }

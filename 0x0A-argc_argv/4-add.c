@@ -43,3 +43,4 @@ sum+=atoi(argv[k]);
 printf("%d\n", sum);
 return (0);
 }
+

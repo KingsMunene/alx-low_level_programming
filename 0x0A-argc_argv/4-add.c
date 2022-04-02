@@ -5,7 +5,8 @@
  * main - adds two numbers
  * @argc: argument count
  * @argv: argument array
- * Return: 1 (fail) 0 (success)
+ * Return: 1 (fail)
+ * Return: Return 0
  */
 int main(int argc, char *argv[])
 {
@@ -22,7 +23,6 @@ for (i = 1; i < argc; i++)
 {
 for (j = 0; argv[i][j] != '\0'; j++)
 {
-
 if (argv[i][j] > '9' || argv[i][j] < '0')
 {
 printf("Error\n");
@@ -33,7 +33,6 @@ return (1);
 
 for (k = 1; k < argc; k++)
 {
-
 if (k != '\0')
 sum+=atoi(argv[k]);
 }

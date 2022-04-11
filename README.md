@@ -1,6 +1,6 @@
 # ALX-LOW_LEVEL_PROGRAMMING
 
-This directory contains a directory that contains low level programs written in c language in shell scripts.
+This directory contains  directories that contains low level programs written in c language and shell scripts.
 
 ## ALLOWED EYES?
 

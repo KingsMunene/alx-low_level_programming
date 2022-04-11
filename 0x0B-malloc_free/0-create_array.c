@@ -3,8 +3,8 @@
 
 /**
  * create_array - Creates an array of chars, and initializes it with a char
- * @Size: size of array
- * @: the char
+ * @size: size of array
+ * @c: the char
  * Return: Returns a pointer or NULL
  */
 
@@ -22,5 +22,4 @@ char *create_array(unsigned int size, char c)
 	for (i = 0; i < size; i++)
 		pointers[i] = c;
 	return (pointers);
-	
 }

@@ -1,20 +1,22 @@
-include "function_pointers.h"
-#include <stdio.h>
+17 sloc)  421 Bytes
+  
 #include <stdlib.h>
-/**
- *array_iterator - executes a functiongiven as parameter
- *@array: pointer array
- *@size: size of array
- *@action: pointer to a function
- *Return: void
- */
+#include "function_pointers.h"
 
+/**
+ * array_iterator - executes a function given as a parameter
+ * on each element of an array
+ * @array: array to iterate over
+ * @size: size of the array
+ * @action: pointer to function used
+ */
 void array_iterator(int *array, size_t size, void (*action)(int))
 {
-	size_t b;
+	unsigned int i;
 
-	if (action == NULL || array == NULL || size <= 0)
+	if (!array || !action)
 		return;
-	for (b = 0; b < size; b++)
-		action(array[b]);
+
+	for (i = 0; i < size; i++)
+		action(array[i]);
 }

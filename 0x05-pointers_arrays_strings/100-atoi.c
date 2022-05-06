@@ -21,12 +21,11 @@ int _atoi(char *s)
 	/*Get the size of the string to be converted*/
 	while (s[len] != '\0')
 		len++;
-	
 	while (k < len && nodigit == 0)
 	{
 		/*loop through the string checking for negative operators*/
 		if (s[k] == '-')
-		       negatives++;
+			negatives++;
 	       /*check for numbers*/
 	       if (s[k] >= '0' && s[k] <= '9')
 	       {
@@ -34,7 +33,7 @@ int _atoi(char *s)
  *update the int number to be returned
  *we multiply the number by ten to create an extra place value.
  *since number is zero it will start with place value one.
- *The next number will have two place value when multiplied by 10 and on and on...
+ *The next number will have two place value when multiplied by 10 and on and on.
  *Add the other digit found if any
  *we use (-'0') to convert char to int
 */
@@ -44,6 +43,7 @@ int _atoi(char *s)
 */
 		       if (negatives % 2)
 			       sign = -1;
+
 		       nodigit = 1;
 		       if (s[k + 1] < '0' || s[k + 1] > '9')
 			       break;

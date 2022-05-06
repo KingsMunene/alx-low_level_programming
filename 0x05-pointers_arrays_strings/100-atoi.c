@@ -17,17 +17,17 @@ int _atoi(char *s)
 	number = 0;
 	negatives = 0;
 	nodigit = 0;
-	//Get the size of the string to be converted
+	/*Get the size of the string to be converted*/
 
 	while (s[len] != '\0')
 		len++;
 
 	while (k < len && nodigit == 0)
 	{
-		//loop through the string checking for negative operators
+		/*loop through the string checking for negative operators*/
 	       if (s[k] == '-')
 		       negatives++;
-	       //check for numbers
+	       /*check for numbers*/
 	       if (s[k] >= '0' && s[k] <= '9')
 	       {
 /*update the int number to be returned
@@ -38,7 +38,7 @@ Add the other digit found if any
 we use (-'0') to convert char to int
 */
 		       number = number * 10 + s[k] - '0';
-//change the sign if its negative
+/*change the sign if its negative*/
 		       if (negatives % 2)
 			       sign = -1;
 		       nodigit = 1;

@@ -43,7 +43,7 @@ we use (-'0') to convert char to int
 			       sign = -1;
 		       nodigit = 1;
 
-		       if (s[k + 1] < '0' | s[k + 1] > '9')
+		       if (s[k + 1] < '0' || s[k + 1] > '9')
 			       break;
 		       nodigit = 0;
 	       }

@@ -29,27 +29,22 @@ int _atoi(char *s)
 	       /*check for numbers*/
 	       if (s[k] >= '0' && s[k] <= '9')
 	       {
-/**
- *update the int number to be returned
- *we multiply the number by ten to create an extra place value.
- *since number is zero it will start with place value one.
- *The next number will have two place value when multiplied by 10 and on and on.
- *Add the other digit found if any
- *we use (-'0') to convert char to int
+/* update the int number to be returned
+ * we multiply the number by ten to create an extra place value.
+ * since number is zero it will start with place value one.
+ * The next number will have two place value when multiplied by 10 and on n on.
+ * Add the other digit found if any
+ * we use (-'0') to convert char to int
 */
 		       number = number * 10 + s[k] - '0';
-/**
- *change the sign if its negative
-*/
+/*change the sign if its negative*/
 		       if (negatives % 2)
 			       sign = -1;
-
 		       nodigit = 1;
 		       if (s[k + 1] < '0' || s[k + 1] > '9')
 			       break;
 		       nodigit = 0;
 	       }
-
 	       k++;
 	}
 	if (nodigit == 0)

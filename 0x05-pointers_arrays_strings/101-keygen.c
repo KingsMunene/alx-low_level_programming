@@ -19,7 +19,17 @@ int main(void)
 		j++;
 	}
 /*alphabets*/
-	char alphabets[] = {'A','B','C','D','E','F','G','H','I','J','K','L'};
+	char alphabets[10];
+	alphabets[0] = 'A';
+	alphabets[1] = 'B';
+	alphabets[2] = 'C';
+	alphabets[3] = 'D';
+	alphabets[4] = 'E';
+	alphabets[5] = 'F';
+	alphabets[6] = 'G';
+	alphabets[7] = 'H';
+	alphabets[8] = 'I';
+	alphabets[9] = 'J';
 /*Loop through the alphabets getting the alphabet represented by
   a random number */
 		while (i < 10)

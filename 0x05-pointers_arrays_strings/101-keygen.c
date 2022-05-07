@@ -4,7 +4,7 @@
 
 int main(void)
 {
-	int i = 0, j = 0, k = 0;
+	int i = 0, j = 0;
 
 	int numbers[10];
 
@@ -26,9 +26,11 @@ int main(void)
 		{
 			password[i] = alphabets[numbers[i]];
 
-
+			printf("%c",password[i]);
 			i++;
 		}
 
 		printf("\n");
+		
+		return (0);
 }

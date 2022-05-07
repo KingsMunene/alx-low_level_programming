@@ -38,8 +38,7 @@ int main(void)
 			printf("%c",password[i]);
 			i++;
 		}
-
+		printf("Tada! Congrats");
 		printf("\n");
-		
-		return (0);
+				return (0);
 }

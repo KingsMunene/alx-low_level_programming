@@ -9,7 +9,7 @@ int main(void)
 	int numbers[10];
 
 	char password[10];
-
+	char alphabets[10];
 	srand(time(NULL));
 
 /*Generate random numbers that will be looped through alphabests */
@@ -19,7 +19,6 @@ int main(void)
 		j++;
 	}
 /*alphabets*/
-	char alphabets[10];
 	alphabets[0] = 'A';
 	alphabets[1] = 'B';
 	alphabets[2] = 'C';

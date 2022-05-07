@@ -2,43 +2,34 @@
 #include <stdlib.h>
 #include <time.h>
 
+/**
+ * main - program that generates random valid
+ * passwords for the program 101-crackme
+ *
+ * Return: Always 0 (Success)
+ */
 int main(void)
 {
-	int i = 0, j = 0;
+	int pass[100];
+	int i, sum, n;
 
-	int numbers[10];
+	sum = 0;
 
-	char password[10];
-	char alphabets[10];
 	srand(time(NULL));
 
-/*Generate random numbers that will be looped through alphabests */
-	while (j < 10)
+	for (i = 0; i < 100; i++)
 	{
-		numbers[j] = (rand() % 10);
-		j++;
-	}
-/*alphabets*/
-	alphabets[0] = 'A';
-	alphabets[1] = 'B';
-	alphabets[2] = 'C';
-	alphabets[3] = 'D';
-	alphabets[4] = 'E';
-	alphabets[5] = 'F';
-	alphabets[6] = 'G';
-	alphabets[7] = 'H';
-	alphabets[8] = 'I';
-	alphabets[9] = 'J';
-/*Loop through the alphabets getting the alphabet represented by
-  a random number */
-		while (i < 10)
+		pass[i] = rand() % 78;
+		sum += (pass[i] + '0');
+		putchar(pass[i] + '0');
+		if ((2772 - sum) - '0' < 78)
 		{
-			password[i] = alphabets[numbers[i]];
-
-			printf("%c",password[i]);
-			i++;
+			n = 2772 - sum - '0';
+			sum += n;
+			putchar(n + '0');
+			break;
 		}
-		printf("Tada! Congrats");
-		printf("\n");
-				return (0);
+	}
+
+	return (0);
 }

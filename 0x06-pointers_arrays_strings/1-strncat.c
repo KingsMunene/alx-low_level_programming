@@ -14,8 +14,8 @@ char *_strncat(char *dest, char *src, int n)
 	int len = 0, len1 = 0;
 	/*Get the length of dest */
 	while (dest[len] != '\0')
-	{	len++;
-
+	{
+		len++;
 	}
 	/* Move the dest pointer to point at the null pointer
 	 * append src to dest if the length is not greater than n
@@ -26,6 +26,5 @@ char *_strncat(char *dest, char *src, int n)
 		dest[len + len1] = src[len1];
 		len1++;
 	}
-
 	return (dest);
 }

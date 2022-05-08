@@ -11,19 +11,19 @@
  */
 char *_strncat(char *dest, char *src, int n)
 {
-	int length, j;
-	/* j is a counter for  n bytes of src to be concatenated */
-	/* length = length of destination string */
+	int len = 0, len1 = 0;
+	/*Get the length of dest */
+	while (dest[len] != '\0')
+		len++;
 
-	length = 0;
-	while (dest[length] != '\0')
+	/* Move the dest pointer to point at the null pointer
+	 * append src to dest if the length is not greater than n
+	 */
+	while (src[len1] != '\0')
 	{
-		length++;
+		dest[len + len1] = src[len1];
+		len1++;
 	}
-	for (j = 0; j < n && src[j] != '\0'; j++, length++)
-	{
-		dest[length] = src[j];
-	}
-	dest[length] = '\0';
+
 	return (dest);
 }
